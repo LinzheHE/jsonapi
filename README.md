@@ -6,19 +6,27 @@ To install the api, in terminal run:
 pip install extendjsonapi
 
 To use the extended json api, at the beginning in you python file:
+```
 from extendjsonapi import *
 import json
+```
 
 To use the the encoder for complex or range:
+```
 json.dumps(obj, cls=MyEncoder)
+```
 
 To use the decoder for complex or range:
+```
 json.loads(obj, cls=MyDecoder)
+```
 
-*NOTICE: since jsonapi is already used on PyPI, update the api name to extendjsonapi*
-*setup.py is not included since this api is built using poetry, all set up information are included in the pyproject.toml*
+>*NOTICE: since jsonapi is already used on PyPI, update the api name to extendjsonapi*
+>
+>*setup.py is not included since this api is built using poetry, all set up information are included in the pyproject.toml*
 
 you can run the following code to test whether it works or not:
+```
 from extendjsonapi import *
 import pytest
 import json
